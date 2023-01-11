@@ -1,0 +1,12 @@
+services:
+  sbl:
+    build: .
+    container_name: sbl
+    volumes:
+      - ./:/tmp/work
+      - ../SblKeys/:/tmp/SblKeys
+    network_mode: host
+    privileged: false
+    environment:
+      SBL_KEY_DIR: /tmp/SblKeys
+
