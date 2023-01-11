@@ -26,5 +26,5 @@ RUN apt-get install --no-install-recommends -y locales && \
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 
 USER docker
-RUN git config --global user.name "User" && git config --global user.email "user@example.com"
+RUN git config --global user.name "Julian Day" && git config --global user.email "julianfday@gmail.com"
 CMD /bin/bash
